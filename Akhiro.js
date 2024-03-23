@@ -1,4 +1,5 @@
 const login = require("./fb-chat-api/index");
+const logger = require("./logger);
 const fs = require("fs-extra");
 const express = require("express");
 const chalk = require("chalk");
