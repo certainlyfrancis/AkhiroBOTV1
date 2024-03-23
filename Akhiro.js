@@ -184,7 +184,7 @@ function initializeBot() {
 
                         if (!isAdmin(event.senderID)) {
                           api.sendMessage(
-                            "❌ | You don't have the required role to execute this command.",
+                            "❌ | 𝖮𝗇𝗅𝗒 𝗍𝗁𝖾 𝗕𝗼𝘁𝗗𝗲𝘃𝘀 𝖺𝗋𝖾 𝖺𝗅𝗅𝗈𝗐 𝗍𝗈 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽",
                             event.threadID,
                             event.messageID,
                           );
@@ -196,7 +196,7 @@ function initializeBot() {
                     await command.onRun({ api, event, args, fonts });
                   } else {
                     api.sendMessage(
-                      `❌ | Invalid command, use \`${global.AkhiroBot.botPrefix}help\` to show available commands.`,
+                      `🤷‍♂️ | 𝖨𝗇𝗏𝖺𝗅𝗂𝖽 𝖼𝗈𝗆𝗆𝖺𝗇𝖽. 𝖯𝗅𝖾𝖺𝗌𝖾 𝗎𝗌𝖾 [ ${global.AkhiroBot.botPrefix} ] 𝗍𝗈 𝗏𝗂𝖾𝗐 𝗍𝗁𝖾 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌`,
                       event.threadID,
                       event.messageID,
                     );
@@ -211,20 +211,13 @@ function initializeBot() {
               };
 
               if (event.body && event.body.toLowerCase() === "prefix") {
-                api.sendMessage(
-                  fonts.applyFonts(`▄▀█ █▄▀ █░█ █ █▀█ █▀█
-█▀█ █░█ █▀█ █ █▀▄ █▄█
-━━━━━━━━━━━━━━━━━━━
-Hello there User, Im AkhiroBot. My Prefix Is This [ ${global.AkhiroBot.botPrefix} ]. I Hope You Will Enjoy Using Me, Have Fun. Thanks!
-
-AkhiroBot Is A Collab Bot File Project Made By AkhiroDev, LiANE And Yu3Bot, So Please If You Managed To Find This File, Please Don't Abuse This Bot File Project Of Our's.
-
-DEVELOPERS OF AKHIROBOT:
-- YueBot ( Rui Reogo )
-- AkhiroDev ( Francis Loyd Raval )
-- LiANE ( Liane Cagara )
-
-YSD: AkhiroBot`, "sans"),
+                api.sendMessage(`
+▄▀█ █▄▀ █░█ █ █▀█ █▀█
+█▀█ █░█ █▀█ █ █▀▄ █▄█ 
+━━━━━━━━━━━━━━━━━━━━
+ 𝖧𝖾𝗅𝗅𝗈 𝗍𝗁𝖾𝗋𝖾 𝖽𝖾𝖺𝗋 𝗎𝗌𝖾𝗋 𝗈𝖿 𝗔𝗸𝗵𝗶𝗿𝗼𝗕𝗢𝗧, 𝖨𝗆 𝗔𝗸𝗵𝗶𝗿𝗼𝗕𝗢𝗧 𝗆𝖺𝖽𝖾 𝖻𝗒 𝗙𝗿𝗮𝗻𝗰𝗶𝘀 𝗟𝗼𝘆𝗱 𝗥𝗮𝘃𝗮𝗹 𝖺𝗅𝗌𝗈 𝗄𝗇𝗈𝗐𝗇 𝖺𝗌 𝗔𝗸𝗵𝗶𝗿𝗼𝗗𝗘𝗩, 𝗟𝗶𝗮𝗻𝗲 𝗖𝗮𝗴𝗮𝗿𝗮 𝖺𝗅𝗌𝗈 𝗄𝗇𝗈𝗐𝗇 𝖺𝗌 𝗟𝗶𝗔𝗡𝗘 𝖺𝗇𝖽 𝗥𝘂𝗶 𝗥𝗲𝗼𝗴𝗼 𝖺𝗅𝗌𝗈 𝗄𝗇𝗈𝗐𝗇 𝖺𝗌 𝗬𝘂𝗲𝗕𝗼𝘁.
+𝖬𝗒 𝖼𝗎𝗋𝗋𝖾𝗇𝗍 𝗉𝗋𝖾𝖿𝗂𝗑 𝗂𝗌 𝗍𝗁𝗂𝗌 [ ${global.AkhiroBot.botPrefix} ]. 𝖨 𝗁𝗈𝗉𝖾 𝗒𝗈𝗎 𝗐𝗂𝗅𝗅 𝖾𝗇𝗃𝗈𝗒 𝗎𝗌𝗂𝗇𝗀 𝗆𝖾 𝖺𝗌 𝗒𝗈𝗎𝗋 𝖠𝖨 𝖡𝗎𝖽𝖽𝗒. 𝖳𝗁𝖺𝗇𝗄𝗌!
+𝗬𝗦𝗗: 𝗔𝗸𝗵𝗶𝗿𝗼𝗕𝗢𝗧`,
                   event.threadID,
                   event.messageID,
                 );
