@@ -7,7 +7,7 @@ module.exports = {
     author: "Rui",
   },
   onRun: async ({ api, event, args }) => {
-    await api.sendMessage("Restarted :)", event.threadID, event.messageID);
+    await api.sendMessage("⏳ | 𝗥𝗲𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴...", event.threadID, event.messageID);
 
 		process.exit(2);
   },
