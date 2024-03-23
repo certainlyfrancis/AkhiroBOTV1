@@ -2,9 +2,10 @@ const axios = require("axios");
 
 module.exports = {
   config: {
-    name: "chat2",
+    name: "chatv2",
     description: "Talk to SimSimi.",
-    usage: "{p}chat [message]",
+    aliases: ["sim2", "simiv2"],
+    usage: "chat [message]",
     author: "Rui",
   },
 
