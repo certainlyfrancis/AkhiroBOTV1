@@ -4,7 +4,7 @@ module.exports = {
   config: {
     name: "chat",
     description: "Community driven AI",
-    usage: "simi2 [query]",
+    usage: "chat [query]",
     author: "Rui",
     aliases: ["simi"],
   },
